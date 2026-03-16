@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIZ</title>
+    <style>
+        /* 移除浏览器默认的边距，使内容完全贴合屏幕边缘 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* 隐藏网页自带的滚动条，完全依赖PDF阅读器的滚动条 */
+            background-color: #525659; /* 常见的PDF阅读器背景色，加载时不会刺眼 */
+        }
+
+        /* 让 iframe 完全撑满整个屏幕 */
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      请将下方 src 属性中的 "your-document.pdf" 替换为您真实的 PDF 文件名。
+      例如：如果您的文件叫 biz-plan.pdf，就改成 src="biz-plan.pdf"
+      请确保您的 PDF 文件和这个 index.html 文件放在同一个文件夹下。
+    -->
+    <iframe src="BIZ.pdf" title="BIZ PDF Document">
+        您的浏览器不支持内嵌PDF，请下载后查看。
+    </iframe>
+
+</body>
+</html>
